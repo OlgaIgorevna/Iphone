@@ -9,9 +9,9 @@
 .header{
   background: url(img/header.jpg) no-repeat;
   width: 100%;
-  min-height: 950px;
+  min-height: 500px;
   padding: 450px 0 0 316px; 
-  position: relative;
+  position: relative; 
 }
 .header .img{
   position: absolute;
@@ -24,7 +24,7 @@
   top: 56px;  
 }
 .header-text{
-  max-width: 470px;
+  max-width: 450px;
 }
 
 .header span.title{
@@ -39,4 +39,45 @@
   font-family: openSansLight;
   color: white;
   font-size: 13px;
+}
+
+
+.layout-positioner{
+  width:100%;
+  padding: 0 0 0 316px;
+  background: white;
+}
+.text-first{
+  margin: 115px 0 80px;
+  color: 959595;
+}
+.text-first .text{
+  line-height:1.5;
+}
+.left-column{  
+  max-width: 570px;
+  float:left;
+}
+.right-column{
+  float:left;
+  max-width: 570px;
+  margin-left: 30px;
+  margin-top:  160px;
+}
+
+.left-column .title{
+  display:block;
+  margin-bottom: 20px;
+  font-size: 35px;
+  color: black;
+}
+.paragraph{
+  display: block;
+  margin-bottom: 20px;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
 }
