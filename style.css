@@ -1,0 +1,42 @@
+*{
+  margin:0;
+  padding:0;
+}
+@font-face {
+  font-family: openSansLight;
+  src: url("fonts/openSansLight.ttf") format("opentype");
+}
+.header{
+  background: url(img/header.jpg) no-repeat;
+  width: 100%;
+  min-height: 950px;
+  padding: 450px 0 0 316px; 
+  position: relative;
+}
+.header .img{
+  position: absolute;
+  left: 820px;
+  top:260px;
+}
+.logo{ 
+  position:absolute;
+  left: 316px;
+  top: 56px;  
+}
+.header-text{
+  max-width: 470px;
+}
+
+.header span.title{
+  display: block;
+  margin-bottom: 30px;
+  font-family: openSansLight;
+  color: white;
+  font-size: 60px;
+  line-height: 1;
+}
+.header span.text{
+  font-family: openSansLight;
+  color: white;
+  font-size: 13px;
+}
