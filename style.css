@@ -8,10 +8,13 @@
 }
 .header{
   background: url(img/header.jpg) no-repeat;
+  background-size: cover; /*почему без min-width не работает и картинка обрезается?? */
+  min-width: 1800px;
   width: 100%;
-  min-height: 500px;
+  min-height: 950px;
   padding: 450px 0 0 316px; 
   position: relative; 
+  box-sizing: border-box;
 }
 .header .img{
   position: absolute;
@@ -46,6 +49,7 @@
   width:100%;
   padding: 0 0 0 316px;
   background: white;
+  box-sizing: border-box;
 }
 .text-first{
   margin: 115px 0 80px;
