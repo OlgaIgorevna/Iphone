@@ -7,21 +7,43 @@
   src: url("fonts/openSansLight.ttf") format("opentype");
 }
 .header{
- background: url(img/header.jpg) no-repeat; 
+  background: url(img/header.jpg) no-repeat; 
   width: 100%;
   min-height: 1000px;
   padding: 1px;
   position: relative; 
   box-sizing: border-box;
   background-size: cover;   /*почему без min-height не работает и картинка обрезается?? */  
-  background-color: cornflowerblue;
-  
+  background-color: cornflowerblue;  
 }
 .header .img{
   position: absolute;
   left: 920px;
   top:260px;
 }
+.site{
+  position:absolute;
+  left: 30px;
+  top: 70px;
+  width: 200px;
+  height: 30px;
+  font-size: 10px;
+  color: white;
+  font-weight: bold;
+  font-family: openSansLight;
+  text-transform: uppercase;
+  -webkit-transform: rotate(-90deg); //Chrome, Safari
+  -moz-transform: rotate(-90deg); //Firefox
+  -o-transform: rotate(-90deg); //Opera
+  -ms-transform: rotate(-90deg); //IE
+  transform: rotate(-90deg); //браузеры без префексов  
+  
+  
+}
+.header .site{
+  left: 30px;
+  top: 470px;}
+
 .logo{ 
   position:absolute;
   left: 330px;
@@ -54,6 +76,8 @@
   box-sizing: border-box;
   vertical-align: top;
 }
+
+
 .text-first{
   margin: 115px 0 80px;
   color: 959595;
@@ -162,7 +186,7 @@
   font-weight: bold;
   margin-bottom: 50px;
 }
-.column{
+.four-column-block .column{
   display:inline-block;
   width: 280px;
   max-height: 400px;
@@ -170,7 +194,7 @@
   vertical-align: top;
 }
 
-.four-column-block .column .text{
+.column .text{
   line-height: 1.5;
   font-size: 15px;  
 }
@@ -181,15 +205,7 @@
   margin-bottom: 20px;
   
 }
-/*
- <div class="full-img">
-      <div class="content">
-        <span class="title">
-          More power 
-          behind every pixel.
-        </span>
-        <span class="text">
-*/
+
 .full-img{
   color:white;
   font-family: openSansLight;
@@ -218,6 +234,28 @@
   margin-bottom: 40px;
 }
 
+
+.three-column-block{
+  font-family: openSansLight;
+  color: white;
+  background-color: #82ca9c;
+  width: 100%;
+  overflow: auto;
+  position: relative;
+}
+
+
+.three-column-block .layout-positioner{
+  background: none;
+  margin: 50px 0;
+}
+.column{
+  display:inline-block;
+  width: 400px;
+  max-height: 400px;
+  margin-right: 20px;  
+  vertical-align: top;
+}
 
 
 .clearfix::after {
