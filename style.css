@@ -150,6 +150,40 @@
   width: 20px;
   height: 20px;  
 }
+
+.four-column-block{
+  margin: 50px 0;
+  font-family: openSansLight;
+  color: black;
+  
+}
+.title-block{ 
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+.column{
+  display:inline-block;
+  width: 280px;
+  max-height: 400px;
+  margin-right: 20px;  
+  vertical-align: top;
+}
+
+.four-column-block .column .text{
+  line-height: 1.5;
+  font-size: 15px;  
+}
+
+.column .title{
+  display: block;
+  font-weight: bold;
+  margin-bottom: 20px;
+  
+}
+
+
+
 .clearfix::after {
   content: "";
   display: table;
