@@ -1,6 +1,7 @@
 *{
   margin:0;
   padding:0;
+  font-family: openSansLight;
 }
 @font-face {
   font-family: openSansLight;
@@ -30,7 +31,6 @@
   font-size: 10px;
   color: white;
   font-weight: bold;
-  font-family: openSansLight;
   text-transform: uppercase;
   -webkit-transform: rotate(-90deg); //Chrome, Safari
   -moz-transform: rotate(-90deg); //Firefox
@@ -57,13 +57,11 @@
 .header span.title{
   display: block;
   margin-bottom: 30px;
-  font-family: openSansLight;
   color: white;
   font-size: 60px;
   line-height: 1;
 }
 .header span.text{
-  font-family: openSansLight;
   color: white;
   font-size: 13px;
 }
@@ -108,7 +106,6 @@
 }
 .galery{
   font-size: 0;
-  font-family: openSansLight;
   color: white;
 }
 .small-block{
@@ -177,7 +174,6 @@
 
 .four-column-block{
   margin: 50px 0;
-  font-family: openSansLight;
   color: black;
   
 }
@@ -207,8 +203,7 @@
 }
 
 .full-img{
-  color:white;
-  font-family: openSansLight;
+  color:white;  
   background-image: url(img/full-img.png);
   background-size: cover;
   width:100%;
@@ -257,6 +252,84 @@
   vertical-align: top;
 }
 
+.left-form, .right-form{
+  margin: 150px 130px 0 100px;
+  width: 450px;
+  color: #8297a7;
+  font-size: 15px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.form-block .label{ 
+  width: 100px;
+  height: 15px;
+  text-transform: uppercase;
+  background: #e1e1e1;
+  border-radius: 5px;
+  border: 1px transparent;
+  font-size: 10px;
+  text-align: center;
+  padding: 5px;  
+  color:white;
+}
+.label span{ 
+  display: block;
+  margin: 2px;
+  font-weight: bold;
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+
+.form-block{
+  background: #f6f7fa;
+  overflow: auto;
+  padding-bottom: 150px;
+  position: relative;
+}
+.form-block .layout-positioner{background: none; }
+
+.form-block .title{
+  font-size: 40px;
+  display: block;
+  margin: 20px 0;
+  color: black;
+}
+
+.form-block .text{
+  font-size: 15px;
+  line-height: 2;
+}
+
+button {
+  background-color: #82ca9c;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;    
+  display: inline-block;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+.badges{ margin-top: 20px;}
+
+.right-form{
+  margin: 115px 0 0 20px;
+  background-color: white;
+  padding: 40px 50px 40px 40px;
+  box-shadow: 0 0 50px rgba(0,0,0,0.2)
+}
+.right-form .label {
+  background-color: #bd8cbf;
+  width: 150px;
+}
+.form-block .site{
+  color: #b8b8b8;
+  top: 110px;
+}
 
 .clearfix::after {
   content: "";
