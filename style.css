@@ -135,7 +135,7 @@
   font-size: 15px;
   height: 150px;
 }
-.galery .link{
+.link{
   display: block; 
   font-size:15px;
   font-weight: bolder;
@@ -180,6 +180,42 @@
   font-weight: bold;
   margin-bottom: 20px;
   
+}
+/*
+ <div class="full-img">
+      <div class="content">
+        <span class="title">
+          More power 
+          behind every pixel.
+        </span>
+        <span class="text">
+*/
+.full-img{
+  color:white;
+  font-family: openSansLight;
+  background-image: url(img/full-img.png);
+  background-size: cover;
+  width:100%;
+  height: 1000px;
+  overflow: auto; /*магия против схлопывания margin-ов*/
+}
+
+
+.full-img .content{
+  margin: 500px 0 0 330px;
+  max-width: 600px;
+}
+.full-img .content .title{
+  font-size: 65px;
+  display: block;
+  margin-bottom: 40px;
+  line-height: 1.3;
+}
+.full-img .content .text{
+  font-size: 15px;
+  display: block;
+  line-height: 2;
+  margin-bottom: 40px;
 }
 
 
