@@ -7,27 +7,29 @@
   src: url("fonts/openSansLight.ttf") format("opentype");
 }
 .header{
-  background: url(img/header.jpg) no-repeat;
-  background-size: cover; /*почему без min-width не работает и картинка обрезается?? */
-  min-width: 1800px;
+ background: url(img/header.jpg) no-repeat; 
   width: 100%;
-  min-height: 950px;
-  padding: 450px 0 0 316px; 
+  min-height: 1000px;
+  padding: 1px;
   position: relative; 
   box-sizing: border-box;
+  background-size: cover;   /*почему без min-height не работает и картинка обрезается?? */  
+  background-color: cornflowerblue;
+  
 }
 .header .img{
   position: absolute;
-  left: 820px;
+  left: 920px;
   top:260px;
 }
 .logo{ 
   position:absolute;
-  left: 316px;
+  left: 330px;
   top: 56px;  
 }
 .header-text{
   max-width: 450px;
+  margin: 450px 0 0 330px; 
 }
 
 .header span.title{
@@ -47,9 +49,10 @@
 
 .layout-positioner{
   width:100%;
-  padding: 0 0 0 316px;
+  padding: 0 300 0 330px;
   background: white;
   box-sizing: border-box;
+  vertical-align: top;
 }
 .text-first{
   margin: 115px 0 80px;
@@ -65,7 +68,7 @@
 .right-column{
   float:left;
   max-width: 570px;
-  margin-left: 30px;
+  margin-left: 40px;
   margin-top:  160px;
 }
 
@@ -79,7 +82,74 @@
   display: block;
   margin-bottom: 20px;
 }
+.galery{
+  font-size: 0;
+  font-family: openSansLight;
+  color: white;
+}
+.small-block{
+  display: inline-block;
+  width: 400px;
+  height: 300px;  
+  vertical-align: top;
+}
+.large-block{
+  display: inline-block;
+  font-size: 0;
+  background-image: url(img/box-large.png);
+  background-size: cover;
+  width: 800px;
+  height: 300px;
+  vertical-align: top;
+}
+.large-block .content{
+  width: 500px;
+}
+.small-block.first{
+  background: #f5989d;
+}
+.small-block.second{
+  background: #615f7d;
+}
+.small-block.third{
+  background-image: url(img/box-small.png);
+  background-size: cover;
+}
+.small-block.fourth{
+  background: #82ca9c;
+}
 
+.galery .content{
+  margin: 40px 40px 30px;
+  position: relative;
+}
+
+.galery .title{
+  display: block;
+  margin-bottom: 10px;
+  font-size:30px;
+}
+.galery .text{
+  display: block;
+  line-height: 1.5;
+  font-size: 15px;
+  height: 150px;
+}
+.galery .link{
+  display: block; 
+  font-size:15px;
+  font-weight: bolder;
+}
+
+.galery .third .link::after{
+  content:"♡";
+  font-size: 30px;  
+  position: absolute;
+  right: 20px;
+  bottom: 10px;
+  width: 20px;
+  height: 20px;  
+}
 .clearfix::after {
   content: "";
   display: table;
