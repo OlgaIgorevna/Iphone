@@ -331,6 +331,75 @@ button {
   top: 110px;
 }
 
+.footer{
+  width:100%;
+  background: #192431;
+  color: white; 
+  font-size: 15px;
+}
+.footer .layout-positioner{
+  padding-top: 300px;
+  padding-bottom: 300px;
+  background: none;
+}
+.footer .left-block{
+  width: 700px;
+  display: inline-block;
+}
+.footer .right-block{
+  width: 400px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.footer .big-column{
+  width: 600px;  
+  padding:1px;
+  vertical-align: top;
+}
+.footer .title{
+  display: block;
+  margin-bottom: 35px;
+  font-weight: bold;
+  
+}
+.footer .big-column .text{
+  display: inline-block;
+  line-height:2;
+}
+.footer .small-column{
+  display:inline-block;
+  margin: 50px 100px 0 0;
+}
+.icon{
+  width: 50px;
+  height: 50px;
+  margin:0;
+  padding: 0;
+  border-radius: 0;
+  display:block;
+  float:left;
+  font-size: 20px;
+}
+
+ul{ list-style-type:none; line-height: 2;}
+
+input{
+  width: 300px;
+  height: 50px;
+  padding:0;
+  margin: 0;
+  border: none;
+  display: block;
+  float:left;
+}
+.right-block .text{
+  color:#57697f;
+  display:block;
+  margin-top:20px;
+  clear:both;
+  float:left;
+}
 .clearfix::after {
   content: "";
   display: table;
